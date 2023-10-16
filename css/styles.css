@@ -43,19 +43,24 @@
 
 .home{
     height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+    background: linear-gradient(-90deg, #272622 65%, #fff 35%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 10%;
 }
+._img{
+    width: 450px;
+    height: 450px;
+    padding: auto 10% 20%;
+    border-radius: 500px;
+}
 .home-image{
     width: 500px;
     height: 500px;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    background: #031540;
+    padding: auto;
+    background: #272622;
     border-radius: 50%;
     border: 25px solid #fff;
 
