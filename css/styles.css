@@ -24,6 +24,10 @@
     text-decoration: none;
     font-weight: 700;
 }
+
+.sidebar-container{
+    display: none;
+}
 .navbar a{
     font-size: 18px;
     color: #fff;
@@ -138,4 +142,55 @@
 }
 .btn:hover{
     box-shadow: none;
+}
+
+@media only screen and (max-width: 600px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        background: #272622;
+
+    }
+
+    .navbar{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar a{
+        margin: 10px 5px 10px 5px;
+
+        
+    }
+
+    .sidebar-container{
+        position: relative;
+        display: flex;
+        color: #fff;
+        font-size: 24px;
+        top: -55px;
+        left: -20px;
+
+    }
+
+    .logo{
+        position: relative;
+        color: #fff;
+        top: -50px;
+        right: -30px;
+
+
+    }
+
+    .home{
+        padding-top: 100px;
+    }
+
+    .home-content{
+        padding-top: 20px;
+        text-align: left;
+    }
 }
