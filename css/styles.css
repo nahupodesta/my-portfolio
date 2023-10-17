@@ -20,7 +20,7 @@
 }
 .logo{
     font-size: 25px;
-    color: #031540;
+    color: #272622;
     text-decoration: none;
     font-weight: 700;
 }
@@ -34,18 +34,18 @@
 }
 
 .navbar a:hover{
-    color: #00abf0;
+    color: #3091b8;
 }
 
 .navbar a.active{
-    color: #00abf0;
+    color: #3091b8;
 }
 
 .home{
     height: 100vh;
     background: linear-gradient(-90deg, #272622 65%, #fff 35%);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 10%;
 }
@@ -70,13 +70,31 @@
     color: #fff;
     text-align: right;
 }
+.home-content h3{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#3091b8 ,#3091b8);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: -410px 0;
+    animation: animaText 6s linear infinite;
+}
+@keyframes animaText{
+    0%,95%,100%{
+        background-position: -410px 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
 .home-content h1{
     font-size: 55px;
     line-height: 1.2;
 }
 .home-content h1{
     font-size: 40px;
-    color: #00abf0;
     -webkit-text-stroke: .5px #fff;
 }
 .home-content p{
@@ -96,26 +114,26 @@
     border: 2px solid #fff;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #3091b8;
     text-decoration: none;
     transition: .5s;
 }
 .home-sci a:hover{
-    background: #00abf0;
+    background: #3091b8;
     color: #fff;
-    border-color: #00abf0;
-    box-shadow: 0 0 10px #00abf0;
+    border-color: #3091b8;
+    box-shadow: 0 0 10px #3091b8;
 }
 .btn{
     padding: 12px 35px;
-    background: #00abf0;
+    background: #3091b8;
     border-radius: 40px;
     font-size: 17px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    box-shadow: 0 0 10px #00abf0;
+    box-shadow: 0 0 10px #3091b8;
     transition: .3s;
 }
 .btn:hover{
