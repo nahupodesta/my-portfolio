@@ -11,3 +11,4 @@ function downloadCv() {
     link.click();
     document.body.removeChild(link); 
 }
+

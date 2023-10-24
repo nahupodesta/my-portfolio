@@ -9,10 +9,6 @@
 </head>
 <body>
     <header class="header">
-        <div class="sidebar-container">
-            <label for="sidebar">☻</label> 
-            <input type="checkbox" id="sidebar" hidden>
-        </div>
         <a href="index.html" class="logo">NahuPodestá</a>
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
@@ -20,6 +16,8 @@
             <a href="views/services.html">Services</a>
             <a href="views/contact.html">Contacto</a>
         </nav>
+        <label for="sidebar" class="arrow-sidebar"><i class="fa-solid fa-arrow-right"></i></label> 
+
     </header>
 
     <section class="home">
@@ -29,7 +27,10 @@
         </div>
 
         <div class="home-content">
-            <h1>Hola, soy Nahuel Podestá</h1>
+            <div class="name-container">
+                <h2 class="welcome">Hola, soy</h2>
+                <h2 class="name">Nahuel Podestá</h2>
+            </div>
             <h3>Desarrollador Web</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis unde deserunt quis non corrupti fugplaceat quam dolorum magnam aspernatur saepe dolorem voluptate sequi dolor error, laborum ratione dignissimos quas!</p>
 
@@ -46,5 +47,6 @@
         <p>&copy;  2023 Nahuel Podestá. Todos los derechos reservados</p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/5519e44606.js" crossorigin="anonymous"></script>
 </body>
 </html>

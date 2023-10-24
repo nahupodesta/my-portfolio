@@ -93,14 +93,23 @@
         background-position: 0 0;
     }
 }
-.home-content h1{
-    font-size: 55px;
+.name-container{
+    display: flex;
+    float: right;
+    flex-direction: row;
+    text-wrap: nowrap;
+    font-size: 25px;
     line-height: 1.2;
 }
-.home-content h1{
-    font-size: 40px;
-    -webkit-text-stroke: .5px #fff;
+
+.welcome{
+    padding-right: 10px;
 }
+
+.arrow-sidebar{
+    display: none;
+}
+
 .home-content p{
     font-size: 16px;
     margin-top: 20px;
@@ -144,12 +153,17 @@
     box-shadow: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .home{
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         background: #272622;
+        height: 100%;
+    }
 
+    .logo{
+        display: none;
     }
 
     .navbar{
@@ -157,13 +171,43 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         background: rgba(0, 0, 0, 0.3);
+        height: 40vw;
+        width: 150px;
+    }
+
+    .header{
+        position: fixed;
+        left: -32%;
+        width: 300px;
+        transition: ease all .5s;
+    }
+
+    .name-container{
+        float: unset;
+        flex-direction: column;
+    }
+
+    .arrow-sidebar{
+        position: absolute;
+        display:block;
+        top: 10%;
+        right: 0%;
+        color: #fff;
+        font-size: 30px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        padding: 0 10px 0 10px;
     }
 
     .navbar a{
-        margin: 10px 5px 10px 5px;
+        margin: 10px 5px 10px 5px;  
+    }
 
-        
+    .header:hover {
+        position: fixed;
+        left: -10%;
     }
 
     .sidebar-container{
@@ -171,9 +215,11 @@
         display: flex;
         color: #fff;
         font-size: 24px;
-        top: -55px;
-        left: -20px;
+        
+    }
 
+    .sidebar-container label{
+        position: fixed;
     }
 
     .logo{
@@ -184,13 +230,20 @@
 
 
     }
-
-    .home{
-        padding-top: 100px;
-    }
-
+    
     .home-content{
         padding-top: 20px;
-        text-align: left;
+        text-align: center;
+        width: 120%;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        margin: 10px 0 10px 0;
+    }
+    
+    footer p{
+        font-size: 12px;
+        text-align: center;
     }
 }
